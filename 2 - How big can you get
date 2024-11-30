@@ -1,0 +1,15 @@
+num = input("insert number: ")
+maxnum = int(num)
+minnum = int(num)
+while num != "q":
+  num = input("insert number: ")
+  if num == "q":
+    break
+  if int(num) >= maxnum:
+    maxnum = int(num)
+  elif int(num) <=  minnum:
+    minnum = int(num)
+
+
+print(f"the greatest number is: {maxnum}\n")
+print(f"the smallest number is: {minnum}")
